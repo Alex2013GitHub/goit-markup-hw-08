@@ -16,7 +16,7 @@
   background-color: var(--background);
   text-align: center;
 }
-  
+    
 .hero__title {
   @include font (900, 44px, 1.36, 0.06em);
   text-align: center;
@@ -24,5 +24,3 @@
   color: var(--primary-white-color);
   margin-bottom: 30px;
 }
-  
-  
