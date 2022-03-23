@@ -595,15 +595,16 @@ address {
   
 }
 .about {
-  margin-bottom: -30px;
-  /* display: flex; */
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px){
+  .about {
+    display: flex;
+  }
 }
 
 .about__item {
   margin-bottom: 30px;
-  /* width: 270px;  */
-  
-  
 }
 @media screen and (min-width: 768px){
   .about__item {
@@ -611,15 +612,19 @@ address {
     margin-left: 30px;
     margin-bottom: 30px;
     width: 354px;
-    height: 226;
   }
- 
+}
+@media screen and (min-width: 1200px){
+  .about__item {
+    width: 270px;
+  }
 }
 
-.about__item + .about__item {
-  /* margin-left: 30px; */
+@media screen and (min-width: 1200px){
+  .about__item + .about__item {
+   margin-left: 30px; 
 }
-
+}
 .about__title {
   font-size: 12px;
   line-height: 1.16;
@@ -719,11 +724,11 @@ address {
 }
 
 .team {
-  display: flex; 
+  /* display: flex;  */
 }
 
 .team__item + .team__item{
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .team__item-contens {
