@@ -16,20 +16,18 @@
     margin-bottom: 30px;
   
   }
+
+  .about__item{
+    margin-bottom: 30px;
+  }
   .about__item {
     & + & {
       @media screen and (min-width: 1200px) {
-        width: 1200px;
         margin-left: 30px;
       }
     }
-    @media screen and (min-width: 768px){
-      width: calc(100% / 2 -30px);
-      margin-left: 30px;
-      margin-bottom: 30px;
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px){
+   
+    @media screen and (min-width: 1200px) {
       width: 270px;
     }
   }
@@ -54,12 +52,12 @@
   .works {
     display: flex;
   }
-  .works__item + .works__item {
-    margin-left: 30px;
-  }
   
   .works__item{
     position: relative;
+    & + & {
+      margin-left: 30px;
+    }
   }
   .works__text {
     @include font ();
