@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -19,24 +19,26 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
-  }
-  .section {
     @media screen and (min-width: 768px){
       padding-top: 60px;
       padding-bottom: 60px;
     }
-  }
-  .section {
     @media screen and (min-width: 1200px){
       padding-top: 94px;
       padding-bottom: 94px;
     }
   }
   .section-title {
-    @media screen and (min-width:1200px){
-      @include font ($fz:36px, $lh:1.17);
+    @include font ($fz:36px, $lh:1.17);
       text-align: center;
       color: var(--primary-text-color);
       margin-bottom: 30px;
-    }
+    
   }
+  
+  // @media screen and (min-width:1200px){
+  //     @include font ($fz:36px, $lh:1.17);
+  //     text-align: center;
+  //     color: var(--primary-text-color);
+  //     margin-bottom: 30px;
+  //   }
