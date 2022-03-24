@@ -5,8 +5,6 @@
     margin-bottom: 50px;
   
   }
-  
-  
   .button__btn-send:hover {
     background-color: var(--butoon-hover);
   }
@@ -14,7 +12,6 @@
   .button__item + .button__item {
     margin-left: 8px;
   }
-  
   .hero__btn, .btn{
     @include font ( 700, 16px, 1.88, 0.06em);
     text-align: center;
