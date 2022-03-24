@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -33,8 +33,10 @@
     }
   }
   .section-title {
-    @include font ($fz:28px, $lh:1.17);
-    text-align: center;
-    color: var(--primary-text-color);
-    margin-bottom: 30px;
+    @media screen and (min-width:1200px){
+      @include font ($fz:36px, $lh:1.17);
+      text-align: center;
+      color: var(--primary-text-color);
+      margin-bottom: 30px;
+    }
   }

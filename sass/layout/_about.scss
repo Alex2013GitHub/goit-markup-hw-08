@@ -18,7 +18,13 @@
   }
 
   .about__item{
-    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-left: 30px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      width: 354px;
+    }
+    
   }
   .about__item {
     & + & {
