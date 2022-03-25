@@ -1,14 +1,24 @@
 .button {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-bottom: 50px;
-  
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
   .button__btn-send:hover {
     background-color: var(--butoon-hover);
   }
-  
+  .button__item{
+   margin-bottom: 15px;
+  }
   .button__item + .button__item {
     margin-left: 8px;
   }

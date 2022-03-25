@@ -5,12 +5,19 @@
     margin-bottom: -30px;
   } 
   .content__item {
-    width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc(100% / 3 - 30px);
+    }
+    
   } 
   
   .content__img{
