@@ -4,7 +4,7 @@
     padding-right: 15px;
     margin: 0 auto;
     @media screen and (min-width: 480px){
-      width: 480px;
+      width: 450px;
     }
     @media screen and (min-width: 768px){
       width: 768px;
@@ -15,10 +15,9 @@
     
   }
   .section {
-    @media screen and (min-width: 480px){
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
     @media screen and (min-width: 768px){
       padding-top: 60px;
       padding-bottom: 60px;
@@ -28,17 +27,18 @@
       padding-bottom: 94px;
     }
   }
-  .section-title {
-    @include font ($fz:36px, $lh:1.17);
+  .section__title {
+    @include font ($fz:28px, $lh:1.17);
       text-align: center;
       color: var(--primary-text-color);
       margin-bottom: 30px;
-    
+      @media screen and (min-width: 1200px){
+        @include font ($fz:36px, $lh:1.17);
+        margin-bottom: 50px;
+      }
   }
+  .section__other-background {
+    background-color: var(--button-color);
+   }
   
-  // @media screen and (min-width:1200px){
-  //     @include font ($fz:36px, $lh:1.17);
-  //     text-align: center;
-  //     color: var(--primary-text-color);
-  //     margin-bottom: 30px;
-  //   }
+  
