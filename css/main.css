@@ -460,7 +460,7 @@ address {
 }
 
 @media screen and (min-width: 480px) {
-  .model__icon {
+  .modal__icon {
     position: absolute;
     left: 15px;
     top: 50%;
@@ -540,6 +540,20 @@ address {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 320px) {
+  .modal__check-text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__label {
