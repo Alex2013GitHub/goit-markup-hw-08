@@ -67,4 +67,8 @@
     flex-wrap: wrap;
     gap: 15px 8px;
     margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
 }
