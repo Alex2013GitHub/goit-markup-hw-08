@@ -448,7 +448,7 @@ address {
 }
 
 @media screen and (min-width: 480px) {
-  .modal__icon {
+  .model__icon {
     position: absolute;
     left: 15px;
     top: 50%;
