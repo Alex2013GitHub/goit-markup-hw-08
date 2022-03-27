@@ -1,6 +1,5 @@
 .modal {
   position: absolute;
-  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) scale(1);
@@ -10,9 +9,7 @@
   border-radius: 4px;
   box-shadow: var(--model-shadov);
   padding: 40px;
-  @media screen and (min-width: 480px){
-    width: 450px;
-  }
+  width: 450px;
   @media screen and (min-width: 1200px){
     width: 528px;
   }
@@ -56,14 +53,12 @@
 }
 
 .modal__icon {
-  @media screen and (min-width: 480px){
   position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 .modal__btn-close {
   width: 30px;
