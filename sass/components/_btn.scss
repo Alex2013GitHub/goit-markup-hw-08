@@ -3,7 +3,7 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
       margin-bottom: 40px;
     }
     @media screen and (min-width: 768px) {
@@ -16,12 +16,7 @@
   .button__btn-send:hover {
     background-color: var(--butoon-hover);
   }
-  .button__item{
-   margin-bottom: 15px;
-  }
-  .button__item + .button__item {
-    margin-left: 8px;
-  }
+  
   .hero__btn, .btn{
     @include font ( $fz:16px, $lh:1.88, $ls:0.06em);
     text-align: center;
@@ -65,3 +60,11 @@
     margin-left: 12px;
     padding: 10px  29px;
   }  
+  .button__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+}
