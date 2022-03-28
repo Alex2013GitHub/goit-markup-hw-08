@@ -294,14 +294,6 @@ body {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1200px) {
-  .container-footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .footer-social__contact {
     margin-bottom: 60px;
@@ -318,11 +310,6 @@ body {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-social__onlin {
-    text-align: left;
-  }
-}
 
 .footer-contact__link {
   color: rgba(255, 255, 255, 0.6);
@@ -330,13 +317,6 @@ body {
 
 .footer-contact__item {
   margin-bottom: 9px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-social {
-    width: calc((100% - 90px) / 3);
-    margin: 15px;
-  }
 }
 
 .footer-social__input {
@@ -393,6 +373,11 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+}
+
+.footer-social__form {
+  display: flex;
+  align-items: center;
 }
 
 .modal {
@@ -996,6 +981,14 @@ address {
   fill: var(--accent-color);
 }
 
+.mob-menu__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mob-menu {
   position: fixed;
   background-color: var(--primary-white-color);
@@ -1007,12 +1000,6 @@ address {
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 40px;
-}
-.mob-menu .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .mob-menu__link {
