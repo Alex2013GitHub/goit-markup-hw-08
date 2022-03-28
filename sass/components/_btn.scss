@@ -3,15 +3,6 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (max-width: 480px) {
-      margin-bottom: 40px;
-    }
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-    }
   }
   .button__btn-send:hover {
     background-color: var(--butoon-hover);
@@ -66,9 +57,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px 8px;
-    margin-bottom: 40px;
-    @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
     }
 }
